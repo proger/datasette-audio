@@ -13,16 +13,16 @@ def get_long_description():
 
 
 setup(
-    name="datasette-mp3-audio",
-    description="Turn .mp3 URLs into an audio player in the Datasette interface",
+    name="datasette-audio",
+    description="Turn audio URLs into an audio player in the Datasette interface",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Simon Willison",
-    url="https://github.com/simonw/datasette-mp3-audio",
+    url="https://github.com/proger/datasette-audio",
     project_urls={
-        "Issues": "https://github.com/simonw/datasette-mp3-audio/issues",
-        "CI": "https://github.com/simonw/datasette-mp3-audio/actions",
-        "Changelog": "https://github.com/simonw/datasette-mp3-audio/releases",
+        "Issues": "https://github.com/proger/datasette-audio/issues",
+        "CI": "https://github.com/proger/datasette-audio/actions",
+        "Changelog": "https://github.com/proger/datasette-audio/releases",
     },
     license="Apache License, Version 2.0",
     classifiers=[
