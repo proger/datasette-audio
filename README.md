@@ -11,7 +11,7 @@ Turn .mp3 URLs into an audio player in the Datasette interface
 
 Install this plugin in the same environment as Datasette.
 
-    datasette install datasette-mp3-audio
+    datasette install git+https://github.com/proger/datasette-audio
 
 ## Demo
 
@@ -21,13 +21,13 @@ The demo uses ScotRail train announcements from [matteason/scotrail-announcement
 
 ## Usage
 
-Once installed, any cells with a value that ends in `.mp3` and starts with either `http://` or `/` or `https://` will be turned into an embedded HTML audio element like this:
+Once installed, any cells with a value that ends in `.mp3` or `.wav` and starts with either `http://` or `/` or `https://` will be turned into an embedded HTML audio element like this:
 
 ```html
-<audio controls src="... value ..."><a href="...">Download MP3</a></audio>
+<audio controls src="... value ..."><a href="...">Download audio</a></audio>
 ```
 
-A "Play X MP3s on this page" button will be added to athe top of any table page listing more than one MP3.
+A "Play X audios on this page" button will be added to athe top of any table page listing more than one MP3.
 
 ## Development
 
