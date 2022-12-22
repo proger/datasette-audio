@@ -15,11 +15,11 @@ def extra_js_urls(columns, datasette):
 def render_cell(value):
     if not isinstance(value, str):
         return
-    if value.endswith(".mp3") and (
+    if value.endswith(".mp3") or value.endswith(".wav") and (
         value.startswith("http://")
         or value.startswith("https://")
         or value.startswith("/")
     ):
         return Markup(
-            f'<audio controls src="{escape(value)}"><a href="{escape(value)}">Download MP3</a></audio>'
+            f'<audio controls src="{escape(value)}"><a href="{escape(value)}">Download audio</a></audio>'
         )
